@@ -1,0 +1,78 @@
+header {
+	background: #e5e5e5;
+	width: 100%;
+	margin: 10px;
+}
+header h1 {
+	color: #aaaaaa;
+	padding: 60px;
+	text-align: center;	
+}
+.content #nav{
+	width: 200px;
+	background: white;
+	float: left;
+	margin: 5px 10px 5px 10px;
+}
+.content #about{
+	width: 200px;
+	background: #e5e5e5;
+	float: right;
+	margin: 10px;
+}
+.content #mid{
+	background: yellow;
+	float: left;
+	margin: 0px;
+	width: calc(100% - 440px);
+}
+.content #mid #clip{
+	width: 250px;
+	height: 250px;
+	background: #e5e5e5;
+	float: left;
+	margin: 40px 40px 40px 40px;
+}
+.content:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.content #nav div {
+	margin-bottom: 10px;
+	width: 180px;
+	padding: 10px;
+	text-decoration: none;
+	background:#e5e5e5;
+	text-align: center;
+	text-decoration: none;
+  	display: inline-block;
+}
+footer{
+	background: #e5e5e5;
+	text-align: center;
+	margin: 5px 10px;
+	padding: 10px;
+}
+@media screen and (max-width:  620px){
+	div {
+		width: 100%;
+		float: none;
+		flex-direction: column
+	}
+	.content #nav div {
+		width: 100%;
+	}
+	.content #nav{
+		width: 100%;
+	}
+	.content #about{
+		width: 100%;
+	}
+	.content #mid{
+		width: 100%;
+	}
+	.content #mid #clip{
+		padding: 20px;
+	}
+}
